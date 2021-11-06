@@ -30,7 +30,11 @@ def home():
 
 @app.route("/static/<path:path>")
 def static_dir(path):
-    return send_from_directory("static", path)
+  return send_from_directory("static", path)
+
+@app.route("/static/images/<path:path>")
+def static_img_dir(path):
+  return send_from_directory("static/images", path)
 
 if __name__ == "__main__":
   app.run(debug=True)

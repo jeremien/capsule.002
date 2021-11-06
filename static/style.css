@@ -5,8 +5,18 @@ html, body {
 
 li {
   list-style: none;
+  width: 400px;
 }
 
 img {
   width: 100%;
+}
+
+.no-image {
+  display: none;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
 }

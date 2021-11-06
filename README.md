@@ -29,3 +29,8 @@ dossier templates
 
 # assets
 static avec une route
+
+http://localhost:5000/
+
+> vanilla js > document / event
+> flexbox
