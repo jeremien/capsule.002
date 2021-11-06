@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block titre%}
+hello
+{% endblock %}
+
+{% block contenu %}
+<ul>
+{% for data in datas %}
+  <li>
+    <figure>
+      <img src="{{url_for('static_dir', path='images/013.jpg')}}" />
+      <figCaption>{{ data.titre }}, {{ data.date }}</figCaption>
+    </figure>
+  </li>
+{% endfor %}
+</ul>
+{% endblock %}
