@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block titre%}
+hello
+{% endblock %}
+
+{% block contenu %}
+<ul>
+{% for data in datas %}
+  {% if loop.first %}
+  <li ref="{{loop.index}}" class="image">
+    <figure id="fig{{loop.index}}">
+      <img src="{{url_for('static_img_dir', path=data.image)}}" />
+      <figCaption>{{ data.titre }}, {{ data.date }}</figCaption>
+    </figure>
+  </li>
+  {% else %}
+  <li ref="{{loop.index}}" class="no-image">
+    <figure>
+      <img src="{{url_for('static_img_dir', path=data.image)}}" />
+      <figCaption>{{ data.titre }}, {{ data.date }}</figCaption>
+    </figure>
+  </li>
+  {% endif %}
+{% endfor %}
+</ul>
+{% endblock %}

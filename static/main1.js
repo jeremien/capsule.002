@@ -40,23 +40,3 @@ for (let i = 0; i < listFig.length; i++) {
     listFig[i + 1].className = 'image'
   })
 }
-
-let trigger = false
-const monButton = document.getElementById('button')
-monButton.addEventListener('click', function (event) {
-  const images = document.getElementsByTagName('img')
-  console.log(trigger)
-  if (!trigger) {
-    this.innerText = 'clear'
-    for (let i = 0; i < images.length; i++) {
-      images[i].style.filter = 'blur(10px)'
-    }
-    trigger = !trigger
-  } else {
-    this.innerText = 'blur'
-    for (let i = 0; i < images.length; i++) {
-      images[i].style.filter = 'blur(0)'
-    }
-    trigger = !trigger
-  }
-})

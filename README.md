@@ -34,3 +34,13 @@ http://localhost:5000/
 
 > vanilla js > document / event
 > flexbox
+
+3 solutions js
+
+1. on écrit avec le js
+2. on boucle avec jinga et on reboucle avec js pour assigner une class css
+3. on boucle qu'avec jinga ensuite on click avec js
+
+exercice 
+
+4. appliquer un effet css sur les images à partir d'un bouton
